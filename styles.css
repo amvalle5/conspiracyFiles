@@ -43,3 +43,11 @@ nav li{
     margin: 0 10px;
 }
 
+.heroBanner h2{
+    font-size: 50px;
+}
+
+#moonLand img{
+    width: 400px;
+    padding: 15px;
+}
