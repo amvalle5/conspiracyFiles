@@ -84,9 +84,31 @@ nav li{
     margin-top: 20px;
 }
 
+#moonLand h2{
+    padding-left: 30px;
+}
+
 #moonLand img{
     width: 400px;
-    padding-left: 10px;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px #5CFF5C;
+}
+
+#moonLand p{
+    text-align: right;
+}
+
+
+
+#poll h2{
+    text-align: center;
+    font-weight: bold;
+    color: #4B0082;
+    background-color: #5CFF5C;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    margin-top: 20px;
 }
 
 .responsive-video {
@@ -99,7 +121,6 @@ nav li{
 section {
     margin-bottom: 50px;
 }
-
 
 /* CARD STYLES*/
 #conspiracyTheories {
