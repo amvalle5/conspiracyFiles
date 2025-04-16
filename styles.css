@@ -1,5 +1,10 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: #050505;
+    background-color: #000;
     color: #fff;
     font-family: 'Poppins', sans-seri;
 } 
@@ -16,14 +21,14 @@ h1{
 
 /* NAV STYLES*/
 nav a{
+    display: inline-block;
     text-decoration: none;
     color: #4B0082;
     background-color: #5CFF5C;
     opacity: 0.9;
     font-weight: bold;
     border-radius: 5px;
-    padding: 10px 15px;
-    display: inline-block;
+    padding: 10px 50px;
 }
 nav ul{
     list-style: none;
@@ -35,30 +40,44 @@ nav ul{
 
 nav li{
     margin: 0 10px;
+    padding-bottom: 50px;
+
 }
 
 /* HERO BANNER */
-.heroBanner{
+#heroBanner{
     background-image: url("Images/herobanner.jpeg");
     background-size: cover;
     background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-    min-height: 300px;
+    height: 450px;
+    width: 100%;
 } 
 
-.heroBanner h2{
-    font-size: 50px;
+.heroContent h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.heroContent {
+    text-align: center;
+}
+
+.heroContent .cta-button {
+    display: inline-block;
+    text-decoration: none;
+    align-items: center;
+    color: #4B0082;
+    background-color: #5CFF5C;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 #moonLand img{
     width: 400px;
-    padding: 15px;
-}
-
-img {
-    width:300px;
+    padding-left: 10px;
 }
 
 .responsive-video {
@@ -132,8 +151,8 @@ footer{
     text-align: center;
 }
 
-#mediaBanner h2, #mediaBanner p, #mediaBanner .cta-button {
-text-align: center;
+#mediaBanner {
+    text-align: center;
 }
 
 #mediaBanner p{
@@ -142,12 +161,12 @@ text-align: center;
 }
 
 #mediaBanner .cta-button{
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #4B0082;
     background-color: #5CFF5C;
     border-radius: 8px;
-    padding: 0.5rem;
+    padding: 0.5rem 1.2rem;
     cursor: pointer;
     font-weight: bold;
 }
@@ -173,5 +192,11 @@ text-align: center;
 
 #media h3, #media p{
     text-align: center;
+}
 
+#media p{
+    text-align: center;
+    color: #4B0082;
+    background-color: #5CFF5C;
+    border-radius: 5px;
 }
