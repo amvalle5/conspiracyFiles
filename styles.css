@@ -103,7 +103,7 @@ section {
 
 .card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -126,4 +126,47 @@ section {
 .card p {
     font-size: 0.95rem;
     line-height: 1.4;
+}
+
+footer{
+    text-align: center;
+}
+
+#mediaBanner h2, #mediaBanner p, #mediaBanner .cta-button {
+text-align: center;
+}
+
+#mediaBanner p{
+    font-size: 18px;
+    padding: 30px;
+}
+
+#mediaBanner .cta-button{
+    display: block;
+    text-decoration: none;
+    color: #4B0082;
+    background-color: #5CFF5C;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#unexplainedPhotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+#unexplainedPhotos img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    margin: 0 auto 0.5rem;
+    display: block;
+}
+
+#mediaBanner h2, #media h2 {
+    text-align: center;
+    font-size: 30px;
 }
