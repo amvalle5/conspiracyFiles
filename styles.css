@@ -72,7 +72,7 @@ nav li{
     width: 100%;
 }
 
-.heroContent h2, .theoriesContent h2 {
+.heroContent h2, .theoriesContent h2, #theory-table h2{
     text-align: center;
     font-size: 45px;
 }
@@ -220,6 +220,32 @@ nav li{
     font-size: 0.95rem;
     line-height: 1.4;
 }
+
+/* Table */
+table {
+    width: 90%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    background-color: rgba(20, 20, 30, 0.85);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 10px rgba(255, 32, 110, 0.3);
+  }
+  
+  thead {
+    background-color: #4B0082;
+    color: #5CFF5C;
+  }
+
+  th, td {
+    border: 1px solid #4B0082;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(255, 32, 110, 0.1);
+  }  
 
 footer{
     text-align: center;
@@ -421,7 +447,7 @@ footer{
     box-shadow: 0 0 25px #ffff00, 0 0 50px #ffff00 inset;
 }
 
-/* === ABOUT PAGE VIBES === */
+/*  ABOUT PAGE   */
   .aboutContainer,
   .neon-alt {
     background: rgba(20, 20, 30, 0.8);
@@ -468,3 +494,45 @@ footer{
     color: #fff;
     box-shadow: 0 0 10px #ff206e, 0 0 20px #ff206e88;
   }
+
+#contact h2, p{
+    text-align: center;
+}
+
+#contact a{
+    color: #5CFF5C;
+}
+
+  form {
+    width: 90%;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background: rgba(20, 20, 30, 0.8);
+    border: 1px solid #5CFF5C;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.3em;
+    border: 1px solid #5CFF5C;
+    border-radius: 6px;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  input[type="submit"] {
+    background-color: #4B0082;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff206e;
+  }
+  
