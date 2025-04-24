@@ -8,6 +8,8 @@
     <meta name="description" content="Final project for CIS300 creating a website about conspiracies theories">
       <!-- Custom Styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- JS -->
+     <script src="script.js" defer></script>
     <!--Font Styles-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,19 +73,18 @@
             </div>
         </section>
         <section id="ownEvidence">
-            <form method="post" enctype="multipart/form-data">
+            <form id="evidenceForm" method="post" enctype="multipart/form-data">
                 <div>
                     <label for="evidence" id="textEvidence">Submit Your Own Evidence</label>
                     <input type="file" id="evidence" name="evidence" accept="image/png, image/jpeg" />
-   
+        
                     <label for="message">Describe Your Evidence:</label>
                     <textarea id="message" name="message" cols="30" rows="5" placeholder="Redacted? Not here. Spill the truth!"></textarea>
-                    
+        
                     <button type="submit">Submit</button>
-                    
                 </div>
             </form>
-        </section>
+        </section>   
     </main>
     <footer>
         <p>&copy; 2025 Conspiracy Files: The Web's Wildest  | Contact | Privacy Policy</p>

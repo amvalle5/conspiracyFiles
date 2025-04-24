@@ -8,6 +8,9 @@
     <meta name="description" content="Final project for CIS300 creating a website about conspiracies theories">
       <!-- Custom Styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- JS -->
+    <script src="script.js" defer></script>
+
     <!--Font Styles-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,33 +40,44 @@
 
         <section id="moonLand">
             <h2>Was the Moon Landing a Hoax?</h2>
-            <img src="Images/moonlanding.jpg">
-            <p>On July 20, 1969, over 600 million people watched as Neil Armstrong took "one small step for man" and walked on the surface of the moon. But not everyone is convinced it actually happened.</p>
-            <h3>Common Claims:</h3>
-                <ul>
-                    <li>Waving Flag: In the moon footage, the American flag appears to ripple—even though there's no atmosphere on the moon.</li>
-                    <li>No Stars in Photos: Critics ask why stars aren't visible in any of the pictures taken on the moon's surface.</li>
-                    <li>Odd Shadows: Shadows in the images seem to fall in strange directions, suggesting artificial lighting.</li>
-                    <li>Perfectly Framed Shots: How did they get such well-composed photographs if no one was behind the camera?</li>
-                </ul>
+            <div class="moonLandContent">
+                <img src="Images/moonlanding.jpg" alt="Moon Landing">
+                <p>On July 20, 1969, over 600 million people watched as Neil Armstrong took "one small step for man" and walked on the surface of the moon. But not everyone is convinced it actually happened.</p>
+            </div>
+            <h3 id="claims">Common Claims:</h3>
+            <ul>
+                <li>Waving Flag: In the moon footage, the American flag appears to ripple—even though there's no atmosphere on the moon.</li>
+                <li>No Stars in Photos: Critics ask why stars aren't visible in any of the pictures taken on the moon's surface.</li>
+                <li>Odd Shadows: Shadows in the images seem to fall in strange directions, suggesting artificial lighting.</li>
+                <li>Perfectly Framed Shots: How did they get such well-composed photographs if no one was behind the camera?</li>
+            </ul>
             <h3>NASA's Response:</h3>
-                <p>NASA and scientists have debunked these claims many times. The flag's movement is explained by momentum from being planted, stars are too faint to appear in the camera's exposure settings, and shadow angles can be explained by the lunar terrain. The cameras were also mounted on the astronauts' suits.</p>
+            <p>NASA and scientists have debunked these claims many times. The flag's movement is explained by momentum from being planted, stars are too faint to appear in the camera's exposure settings, and shadow angles can be explained by the lunar terrain. The cameras were also mounted on the astronauts' suits.</p>
             <h3>So... Was It Real?</h3>
-                <p>Millions believe the moon landing was one of humanity's greatest achievements. Others still aren't buying it. We'll leave the decision up to you.</p>
+            <p>Millions believe the moon landing was one of humanity's greatest achievements. Others still aren't buying it. We'll leave the decision up to you.</p>
         </section>
+        
 
         <section id="poll">
             <h2>Quick Poll: Let Us Know</h2>
-            <form>
+            <form id="pollForm">
                 <label for="witness">Have you ever witnessed something unexplainable?</label>
-                <input type="radio" id="yes" name="witness" value="Yes">
-                <label for="yes">Yes, and it was shocking!</label>
-                <input type="radio" id="maybe" name="witness" value="Maybe">
-                <label for="maybe">Maybe, but not sure</label>
-                <input type="radio" id="no" name="witness" value="No">
-                <label for="no">No, but I'm open to it</label>
+                <div class="poll-options">
+                    <input type="radio" id="yes" name="witness" value="Yes">
+                    <label for="yes">Yes, and it was shocking!</label>
+                </div>
+                <div class="poll-options">
+                    <input type="radio" id="maybe" name="witness" value="Maybe">
+                    <label for="maybe">Maybe, but not sure</label>
+                </div>
+                <div class="poll-options">
+                    <input type="radio" id="no" name="witness" value="No">
+                    <label for="no">No, but I'm open to it</label>
+                </div>
+                <button type="submit" id="submitPoll">Submit</button>
             </form>
-        </section>
+            <div id="pollResult"></div> <!-- To show the poll result after submission -->
+        </section>                  
     </main>
     <footer>
         <p>&copy; 2025 Conspiracy Files: The Web's Wildest  | Contact | Privacy Policy</p>
