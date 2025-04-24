@@ -350,27 +350,73 @@ footer{
   }
   
 /* Community Styles */
-#communityBanner{
-    background-color: red;
-    padding: 30px;
-  }
-
-#discussionCategories{
-    background-color: blue;
-    padding: 30px;
-  }
-
-#communityRules{
-    background-color: rgb(88, 142, 7);
-    padding: 30px;
+#communityBanner {
+    background: linear-gradient(to right, #1f0033, #3a0066);
+    padding: 3rem 2rem;
+    color: #f4f4f4;
+    text-align: center;
+    border-bottom: 2px solid #5c1aff;
+    box-shadow: 0 0 25px #9b4d96, 0 0 50px #9b4d96 inset;
 }
 
-#prompt{
-    background-color: rgb(242, 0, 89);
-    padding: 30px;
+#communityBanner:hover{
+    box-shadow: 0 0 15px #9b4d96, 0 0 30px #9b4d96 inset;
+
 }
 
-#spotlight{
-    background-color: orangered;
-    padding: 30px;
+.communityBanner h2 {
+    font-family: 'Unica One', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.communityBanner p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#discussionCategories, #communityRules, #prompt, #spotlight {
+    background-color: #170127;
+    color: #fff;
+    padding: 2rem
+}
+
+
+/* Theory Discussions - Red Glow */
+#discussionCategories {
+    box-shadow: 0 0 15px #ff206e, 0 0 30px #ff206e inset;
+}
+
+#discussionCategories:hover {
+    box-shadow: 0 0 25px #ff206e, 0 0 50px #ff206e inset;
+}
+
+/* Evidence Review - Blue Glow */
+#prompt {
+    box-shadow: 0 0 15px #20e3ff, 0 0 30px #20e3ff inset;
+}
+
+#prompt:hover {
+    box-shadow: 0 0 25px #20e3ff, 0 0 50px #20e3ff inset;
+}
+
+/* Media Watch - Green Glow */
+#communityRules {
+    box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00 inset;
+}
+
+#communityRules:hover {
+    box-shadow: 0 0 25px #00ff00, 0 0 50px #00ff00 inset;
+}
+
+/* Spotlight - Yellow Glow */
+#spotlight {
+    box-shadow: 0 0 15px #ffff00, 0 0 30px #ffff00 inset;
+}
+
+#spotlight:hover {
+    box-shadow: 0 0 25px #ffff00, 0 0 50px #ffff00 inset;
 }
